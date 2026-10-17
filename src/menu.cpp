@@ -121,7 +121,8 @@ ImFont* LoadChineseFont(bool boldFont)
     const wchar_t* const regularFonts[] = {L"msyh.ttc", L"simhei.ttf", L"simsun.ttc", L"Deng.ttf"};
     const wchar_t* const boldFonts[] = {L"msyhbd.ttc", L"simhei.ttf", L"simsun.ttc", L"Dengb.ttf"};
     const wchar_t* const* fonts = boldFont ? boldFonts : regularFonts;
-    for (const wchar_t* font : fonts) {
+    for (size_t i = 0; i < 4; i++) {
+        const wchar_t* font = fonts[i];
         std::wstring path(windows, length);
         path += L"\\Fonts\\";
         path += font;
