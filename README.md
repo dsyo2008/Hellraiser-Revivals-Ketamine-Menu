@@ -4,6 +4,8 @@
 
 <h1 align="center">Hellraiser Revival's Ketamine Menu</h1>
 
+<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a></p>
+
 <p align="center">
   A clean, in-game trainer for <b>Clive Barker's Hellraiser: Revival</b> (PC).<br>
   Drop one file in the game folder, press <kbd>Insert</kbd>, done.

@@ -29,7 +29,7 @@ jobs:
         run: |
           $name = "KetamineMenu-${{ github.ref_name }}".Replace('/', '-')
           New-Item -ItemType Directory -Path package | Out-Null
-          Copy-Item build/Release/winmm.dll, dist/KetamineMenu.ini, README.md, LICENSE, THIRD-PARTY-NOTICES.txt -Destination package
+          Copy-Item build/Release/winmm.dll, dist/KetamineMenu.ini, README.md, README.zh-CN.md, LICENSE, THIRD-PARTY-NOTICES.txt -Destination package
           Compress-Archive -Path package/* -DestinationPath "$name.zip"
           # Nexus / Vortex: game-root layout (Vortex's root installer keys on the "Hellraiser" folder). No ini: the menu
           # creates it, so Vortex never sees a deployed file change.
